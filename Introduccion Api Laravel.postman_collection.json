@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "70abd3c3-841c-4a1b-9979-3c34fa3a7c66",
+		"name": "Introduccion Api Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "departments/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/departments",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departments/show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/departments/3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"departments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departments/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Candelaria\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/departments",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departments/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Posadas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/departments/5",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"departments",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departments/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/departments/7",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"departments",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/paginate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/employees?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees/26",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employeesAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employeesall",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employeesall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employeesByDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employeesbydepartment",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employeesbydepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fabricio\",\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"phone\": \"+5493765689524\",\r\n    \"department_id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/employees",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fabricio Juncal\",\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"phone\": \"+5493765689524\",\r\n    \"department_id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/employees/26",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
