@@ -1,0 +1,37 @@
+
+CMD: sail artisan make:model Department -mcrf --api
+
+response:
+
+   INFO  Model [app/Models/Department.php] created successfully.  
+
+   INFO  Factory [database/factories/DepartmentFactory.php] created successfully.  
+
+   INFO  Migration [database/migrations/2023_07_18_003741_create_departments_table.php] created successfully.  
+
+   INFO  Controller [app/Http/Controllers/DepartmentController.php] created successfully.  
+
+================================================================================================================================================
+
+CMD: sail artisan make:model Employee -mcrf --api
+
+response:
+
+   INFO  Model [app/Models/Employee.php] created successfully.
+
+   INFO  Factory [database/factories/EmployeeFactory.php] created successfully.  
+
+   INFO  Migration [database/migrations/2023_07_18_015408_create_employees_table.php] created successfully.  
+
+   INFO  Controller [app/Http/Controllers/EmployeeController.php] created successfully.  
+
+================================================================================================================================================
+
+CMD: sail artisan make:controller AuthController
+
+response:
+
+  INFO  Controller [app/Http/Controllers/AuthController.php] created successfully.
+
+================================================================================================================================================
+
