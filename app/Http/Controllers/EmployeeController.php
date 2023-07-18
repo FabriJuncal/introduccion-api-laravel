@@ -99,8 +99,8 @@ class EmployeeController extends Controller
     }
 
     public function EmployeesByDepartment(){
-        $employees = Employee::select(BD::raw('count(employees.id) as count', 'departments.name  as department'))
-        ->join('departments', 'departments.id', '=', 'employees.department_id')
+        $employees = Employee::select(DB::raw('count(employees.id) as count, departments.name  as department'))
+        ->rightjoin('departments', 'departments.id', '=', 'employees.department_id')
         ->groupBy('departments.name')->get();
         return response()->json($employees);
     }
@@ -108,7 +108,7 @@ class EmployeeController extends Controller
     public function all(){
         $employees = Employee::select('employees.*', 'departments.name as department')
         ->join('departments', 'departments.id', '=', 'employees.department_id')
-        ->groupBy('departments.name')->get();
+        ->get();
         return response()->json($employees);
     }
 }
