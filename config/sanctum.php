@@ -37,16 +37,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Expiration Minutes
+    | Minutos de vencimiento
     |--------------------------------------------------------------------------
     |
-    | This value controls the number of minutes until an issued token will be
-    | considered expired. If this value is null, personal access tokens do
-    | not expire. This won't tweak the lifetime of first-party sessions.
+    | Este valor controla la cantidad de minutos hasta que un token emitido sea
+    | considerado caducado. Si este valor es nulo, los tokens de acceso personal no
+    | no caducar. Esto no modificará la duración de las sesiones propias.
     |
     */
 
-    'expiration' => null,
+    'expiration' => 43200,
 
     /*
     |--------------------------------------------------------------------------
