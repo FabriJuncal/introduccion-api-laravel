@@ -8,8 +8,24 @@
 		{
 			"name": "departments/all",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost/api/departments",
 					"host": [
@@ -25,9 +41,32 @@
 		},
 		{
 			"name": "departments/show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "localhost/api/departments/3",
 					"host": [
@@ -45,8 +84,24 @@
 		{
 			"name": "departments/create",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"Candelaria\"\r\n}",
@@ -72,8 +127,24 @@
 		{
 			"name": "departments/update",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"Posadas\"\r\n}",
@@ -100,8 +171,24 @@
 		{
 			"name": "departments/delete",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -128,8 +215,24 @@
 		{
 			"name": "employees/all",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost/api/employees",
 					"host": [
@@ -146,8 +249,24 @@
 		{
 			"name": "employees/paginate",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://localhost/api/employees?page=2",
 					"protocol": "http",
@@ -171,8 +290,24 @@
 		{
 			"name": "employees/show",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost/api/employees/26",
 					"host": [
@@ -190,8 +325,24 @@
 		{
 			"name": "employeesAll",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost/api/employeesall",
 					"host": [
@@ -208,8 +359,24 @@
 		{
 			"name": "employeesByDepartment",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "localhost/api/employeesbydepartment",
 					"host": [
@@ -226,8 +393,24 @@
 		{
 			"name": "employees/create",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"Fabricio\",\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"phone\": \"+5493765689524\",\r\n    \"department_id\": 5\r\n}",
@@ -253,8 +436,24 @@
 		{
 			"name": "employees/update",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"Fabricio Juncal\",\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"phone\": \"+5493765689524\",\r\n    \"department_id\": 5\r\n}",
@@ -281,8 +480,24 @@
 		{
 			"name": "employees/delete",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -301,6 +516,129 @@
 						"api",
 						"employees",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fabricio Juncal\",\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"juncalfabri@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|NwNqpYTKoPVteC1AwX2633BesyjfJFHTbPmHs7NB",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/api/auth/logout",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
 					]
 				}
 			},
