@@ -62,7 +62,7 @@ class AuthController extends Controller
             'status' => true,
             'message' => 'User logged in successfully',
             'data' => $user,
-            'token', $user->createToken('API TOKEN')->plainTextToken
+            'token' => $user->createToken('API TOKEN')->plainTextToken
         ],200);
 
     }
