@@ -35,7 +35,7 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::resource('employees', EmployeeController::class);
     Route::get('employeesall', [EmployeeController::class, 'all']);
     Route::get('employeesbydepartment', [EmployeeController::class, 'EmployeesByDepartment']);
-    Route::post('auth/logout',[AuthController::class, 'logout']);
+    Route::get('auth/logout',[AuthController::class, 'logout']);
 });
 
 
