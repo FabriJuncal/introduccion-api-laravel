@@ -3,7 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Throwable;
+// Esta clase es una excepción que se utiliza para representar el error HTTP 404 (Not Found) en una aplicación web.
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -23,8 +24,28 @@ class Handler extends ExceptionHandler
      */
     public function register(): void
     {
-        $this->reportable(function (Throwable $e) {
-            //
+        //  el método "renderable" se utiliza para personalizar el manejo de la excepción NotFoundHttpException.
+        $this->renderable(function (NotFoundHttpException $e, $request) {
+
+            // Se verifica si la solicitud coincide con ciertas rutas relacionadas.
+            // Si la solicitud coincide con alguna de estas rutas, entonces se envía una respuesta JSON con un código
+            // de estado HTTP 404 (Not Found) y un mensaje de error específico
+
+            // Excepción para los departamentos no encontrados.
+            if($request->is('api/departments/*')){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'The selected department is invalid'
+                ], 404);
+            }
+
+            // Excepción para los empleados no encontrados.
+            if($request->is('api/employees/*')){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'The selected employee is invalid'
+                ], 404);
+            }
         });
     }
 }
